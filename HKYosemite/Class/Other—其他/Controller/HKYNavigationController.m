@@ -16,7 +16,7 @@
 
 //当第一次使用这个类的时候调用一次
 +(void)initialize{
-    //当导航类用在改NavigationController中，apperance设置才会生效
+    //当导航类用在该NavigationController中，apperance设置才会生效
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     //设置全局apperance
     //UINavigationBar *bar = [UINavigationBar appearance];
@@ -58,22 +58,5 @@
 -(void)p_back{
     [self popViewControllerAnimated:YES];
 }
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

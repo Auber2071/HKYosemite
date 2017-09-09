@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKYRecommendViewController">
             <connections>
+                <outlet property="categoryTableView" destination="BbN-kL-oYA" id="ctp-pZ-dng"/>
+                <outlet property="userTableView" destination="fSe-2D-owO" id="5di-fu-Tqh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,23 +21,35 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BbN-kL-oYA">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BbN-kL-oYA" userLabel="左侧">
                     <rect key="frame" x="0.0" y="0.0" width="70" height="568"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="70" id="tDx-Bb-OIO"/>
+                        <constraint firstAttribute="width" constant="70" id="2JA-wK-1wt"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="jCI-yu-j9s"/>
                         <outlet property="delegate" destination="-1" id="MdA-gy-zlL"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-2D-owO" userLabel="右侧">
+                    <rect key="frame" x="70" y="0.0" width="250" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WOW-Kp-iSw"/>
+                        <outlet property="delegate" destination="-1" id="KkC-40-bFB"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="BbN-kL-oYA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2yH-a1-vYm"/>
-                <constraint firstItem="BbN-kL-oYA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HGe-Sj-Flz"/>
-                <constraint firstAttribute="bottom" secondItem="BbN-kL-oYA" secondAttribute="bottom" id="Vp5-P9-Y12"/>
+                <constraint firstItem="BbN-kL-oYA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="35H-OV-qsF"/>
+                <constraint firstItem="BbN-kL-oYA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4b5-A4-Kh4"/>
+                <constraint firstAttribute="bottom" secondItem="BbN-kL-oYA" secondAttribute="bottom" id="Evo-uk-g2b"/>
+                <constraint firstItem="BbN-kL-oYA" firstAttribute="bottom" secondItem="fSe-2D-owO" secondAttribute="bottom" id="HOE-Bq-9K0"/>
+                <constraint firstAttribute="trailing" secondItem="fSe-2D-owO" secondAttribute="trailing" id="QKL-Y9-7uf"/>
+                <constraint firstItem="fSe-2D-owO" firstAttribute="leading" secondItem="BbN-kL-oYA" secondAttribute="trailing" id="Xwv-aH-bSz"/>
+                <constraint firstItem="BbN-kL-oYA" firstAttribute="top" secondItem="fSe-2D-owO" secondAttribute="top" id="uJ9-aW-Cer"/>
             </constraints>
         </view>
     </objects>

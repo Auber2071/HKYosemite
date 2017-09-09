@@ -28,5 +28,22 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>weibo.com</key>
+            <dict>
+                <key> NSIncludesSubdomains </key>
+                <true/>
+                <key> NSExceptionRequiresForwardSecrecy </key>
+                <false/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>

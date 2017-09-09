@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		261EC14B1F014EE3006E7011 /* Foundation+HKYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 261EC14A1F014EE3006E7011 /* Foundation+HKYLog.m */; };
-		261EC14E1F01516C006E7011 /* HKYRecommendCategroy.m in Sources */ = {isa = PBXBuildFile; fileRef = 261EC14D1F01516C006E7011 /* HKYRecommendCategroy.m */; };
 		262C8C0C1EFF68F100C3484A /* HKYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262C8BE61EFF68F100C3484A /* HKYEssenceViewController.m */; };
 		262C8C0D1EFF68F100C3484A /* HKYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262C8BEC1EFF68F100C3484A /* HKYFriendTrendsViewController.m */; };
 		262C8C0E1EFF68F100C3484A /* HKYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262C8BF21EFF68F100C3484A /* HKYMeViewController.m */; };
@@ -22,6 +21,12 @@
 		262C8C171EFFCF8600C3484A /* HKYFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262C8C161EFFCF8600C3484A /* HKYFriendTrendsViewController.xib */; };
 		262C8C1B1EFFF4E800C3484A /* HKYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262C8C191EFFF4E800C3484A /* HKYRecommendViewController.m */; };
 		262C8C1C1EFFF4E800C3484A /* HKYRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262C8C1A1EFFF4E800C3484A /* HKYRecommendViewController.xib */; };
+		263294A91F63C657008EE5EE /* HKYRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263294A71F63C657008EE5EE /* HKYRecommendCategoryCell.m */; };
+		263294AA1F63C657008EE5EE /* HKYRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263294A81F63C657008EE5EE /* HKYRecommendCategoryCell.xib */; };
+		263294AD1F63C7F4008EE5EE /* HKYRecommendCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 263294AC1F63C7F4008EE5EE /* HKYRecommendCategoryModel.m */; };
+		263294B11F63D931008EE5EE /* HKYRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263294AF1F63D931008EE5EE /* HKYRecommendUserCell.m */; };
+		263294B21F63D931008EE5EE /* HKYRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263294B01F63D931008EE5EE /* HKYRecommendUserCell.xib */; };
+		263294B51F63DC34008EE5EE /* HKYRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 263294B41F63DC34008EE5EE /* HKYRecommendUserModel.m */; };
 		267482201EFD472C00E8060A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2674821F1EFD472C00E8060A /* main.m */; };
 		267482231EFD472C00E8060A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267482221EFD472C00E8060A /* AppDelegate.m */; };
 		2674822B1EFD472C00E8060A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2674822A1EFD472C00E8060A /* Assets.xcassets */; };
@@ -31,8 +36,6 @@
 /* Begin PBXFileReference section */
 		0F514F7AF9E88F1824C62FBE /* Pods-HKYosemite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKYosemite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKYosemite/Pods-HKYosemite.debug.xcconfig"; sourceTree = "<group>"; };
 		261EC14A1F014EE3006E7011 /* Foundation+HKYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+HKYLog.m"; sourceTree = "<group>"; };
-		261EC14C1F01516C006E7011 /* HKYRecommendCategroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendCategroy.h; sourceTree = "<group>"; };
-		261EC14D1F01516C006E7011 /* HKYRecommendCategroy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendCategroy.m; sourceTree = "<group>"; };
 		262C8BE51EFF68F100C3484A /* HKYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYEssenceViewController.h; sourceTree = "<group>"; };
 		262C8BE61EFF68F100C3484A /* HKYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYEssenceViewController.m; sourceTree = "<group>"; };
 		262C8BEB1EFF68F100C3484A /* HKYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -57,6 +60,16 @@
 		262C8C181EFFF4E800C3484A /* HKYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendViewController.h; sourceTree = "<group>"; };
 		262C8C191EFFF4E800C3484A /* HKYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendViewController.m; sourceTree = "<group>"; };
 		262C8C1A1EFFF4E800C3484A /* HKYRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKYRecommendViewController.xib; sourceTree = "<group>"; };
+		263294A61F63C657008EE5EE /* HKYRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendCategoryCell.h; sourceTree = "<group>"; };
+		263294A71F63C657008EE5EE /* HKYRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendCategoryCell.m; sourceTree = "<group>"; };
+		263294A81F63C657008EE5EE /* HKYRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKYRecommendCategoryCell.xib; sourceTree = "<group>"; };
+		263294AB1F63C7F4008EE5EE /* HKYRecommendCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendCategoryModel.h; sourceTree = "<group>"; };
+		263294AC1F63C7F4008EE5EE /* HKYRecommendCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendCategoryModel.m; sourceTree = "<group>"; };
+		263294AE1F63D931008EE5EE /* HKYRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendUserCell.h; sourceTree = "<group>"; };
+		263294AF1F63D931008EE5EE /* HKYRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendUserCell.m; sourceTree = "<group>"; };
+		263294B01F63D931008EE5EE /* HKYRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKYRecommendUserCell.xib; sourceTree = "<group>"; };
+		263294B31F63DC34008EE5EE /* HKYRecommendUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYRecommendUserModel.h; sourceTree = "<group>"; };
+		263294B41F63DC34008EE5EE /* HKYRecommendUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKYRecommendUserModel.m; sourceTree = "<group>"; };
 		263E09E11EFEB212005B573C /* HKYosemite_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKYosemite_PrefixHeader.pch; sourceTree = "<group>"; };
 		2674821B1EFD472C00E8060A /* HKYosemite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKYosemite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2674821F1EFD472C00E8060A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,8 +164,10 @@
 		262C8BED1EFF68F100C3484A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				261EC14C1F01516C006E7011 /* HKYRecommendCategroy.h */,
-				261EC14D1F01516C006E7011 /* HKYRecommendCategroy.m */,
+				263294AB1F63C7F4008EE5EE /* HKYRecommendCategoryModel.h */,
+				263294AC1F63C7F4008EE5EE /* HKYRecommendCategoryModel.m */,
+				263294B31F63DC34008EE5EE /* HKYRecommendUserModel.h */,
+				263294B41F63DC34008EE5EE /* HKYRecommendUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +175,12 @@
 		262C8BEE1EFF68F100C3484A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				263294A61F63C657008EE5EE /* HKYRecommendCategoryCell.h */,
+				263294A71F63C657008EE5EE /* HKYRecommendCategoryCell.m */,
+				263294A81F63C657008EE5EE /* HKYRecommendCategoryCell.xib */,
+				263294AE1F63D931008EE5EE /* HKYRecommendUserCell.h */,
+				263294AF1F63D931008EE5EE /* HKYRecommendUserCell.m */,
+				263294B01F63D931008EE5EE /* HKYRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,8 +424,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2674822B1EFD472C00E8060A /* Assets.xcassets in Resources */,
+				263294AA1F63C657008EE5EE /* HKYRecommendCategoryCell.xib in Resources */,
 				262C8C1C1EFFF4E800C3484A /* HKYRecommendViewController.xib in Resources */,
 				262C8C171EFFCF8600C3484A /* HKYFriendTrendsViewController.xib in Resources */,
+				263294B21F63D931008EE5EE /* HKYRecommendUserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,17 +486,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263294B51F63DC34008EE5EE /* HKYRecommendUserModel.m in Sources */,
 				262C8C141EFF68F100C3484A /* HKYTabBarController.m in Sources */,
 				262C8C0F1EFF68F100C3484A /* HKYNewViewController.m in Sources */,
+				263294B11F63D931008EE5EE /* HKYRecommendUserCell.m in Sources */,
 				262C8C0C1EFF68F100C3484A /* HKYEssenceViewController.m in Sources */,
 				262C8C1B1EFFF4E800C3484A /* HKYRecommendViewController.m in Sources */,
 				262C8C0E1EFF68F100C3484A /* HKYMeViewController.m in Sources */,
 				262C8C0D1EFF68F100C3484A /* HKYFriendTrendsViewController.m in Sources */,
 				262C8C121EFF68F100C3484A /* HKYBasicViewController.m in Sources */,
 				267482231EFD472C00E8060A /* AppDelegate.m in Sources */,
-				261EC14E1F01516C006E7011 /* HKYRecommendCategroy.m in Sources */,
+				263294A91F63C657008EE5EE /* HKYRecommendCategoryCell.m in Sources */,
 				261EC14B1F014EE3006E7011 /* Foundation+HKYLog.m in Sources */,
 				262C8C111EFF68F100C3484A /* UIView+HKYExtension.m in Sources */,
+				263294AD1F63C7F4008EE5EE /* HKYRecommendCategoryModel.m in Sources */,
 				262C8C101EFF68F100C3484A /* UIBarButtonItem+HKYExtension.m in Sources */,
 				262C8C131EFF68F100C3484A /* HKYNavigationController.m in Sources */,
 				262C8C151EFF68F100C3484A /* HKYTabBar.m in Sources */,

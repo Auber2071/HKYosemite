@@ -5,6 +5,9 @@ def pods
     pod 'SVProgressHUD'
     pod 'SDWebImage'
     pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'MJRefresh'
+    
 
 end
 

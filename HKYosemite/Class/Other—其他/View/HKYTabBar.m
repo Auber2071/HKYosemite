@@ -21,7 +21,7 @@
     if (self) {
         [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
         /**
-         1，setBackgroundImage，图片会随着按钮的大小而改变，图片自动会拉伸来适应按钮的大小，这个时候任然可以设置按钮的title，图片不会挡住title；
+         1，setBackgroundImage，图片会随着按钮的大小而改变，图片自动会拉伸来适应按钮的大小，这个时候任意可以设置按钮的title，图片不会挡住title；
          2，setImage，此时再设置title，title将无法显示。图片不会随着按钮的大小改变而改变。
          */
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
