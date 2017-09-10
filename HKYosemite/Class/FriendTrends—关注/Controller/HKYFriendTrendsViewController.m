@@ -9,6 +9,8 @@
 #import "HKYFriendTrendsViewController.h"
 #import "HKYRecommendViewController.h"
 
+#import "HKYLoginRegisterViewController.h"
+
 
 @interface HKYFriendTrendsViewController ()
 
@@ -38,6 +40,11 @@
     
 }
 
+- (IBAction)login:(id)sender {
+    
+    HKYLoginRegisterViewController *loginRegisterVC = [[HKYLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterVC animated:YES completion:nil];
+}
 
 
 @end

@@ -44,7 +44,7 @@ static NSString *HKYTagId = @"tag";
 }
 
 -(void)p_requestRecommendTagsData{
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"tag_recommend";
     params[@"c"] = @"topic";
