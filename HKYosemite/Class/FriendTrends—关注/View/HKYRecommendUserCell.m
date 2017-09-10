@@ -34,7 +34,13 @@
 -(void)setUser:(HKYRecommendUserModel *)user{
     _user = user;
     self.screenNameLabel.text = user.screen_name;
-    self.fansCountLabel.text = [NSString stringWithFormat:@"%zd人关注",user.fans_count];
+    NSString *subNumber = nil;
+    if (user.fans_count < 10000) {
+        subNumber = [NSString stringWithFormat:@"%zd人关注",user.fans_count];
+    }else{
+        subNumber = [NSString stringWithFormat:@"%zd万人关注",(user.fans_count/10000)];
+    }
+    self.fansCountLabel.text = subNumber;
     [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
 }

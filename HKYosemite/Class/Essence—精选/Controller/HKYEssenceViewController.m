@@ -7,6 +7,7 @@
 //
 
 #import "HKYEssenceViewController.h"
+#import "HKYRecommendTagsViewController.h"
 
 @interface HKYEssenceViewController ()
 
@@ -28,6 +29,9 @@
 
 -(void)p_clickEssence{
     HKSLog(@"%s",__func__);
+    
+    HKYRecommendTagsViewController *recommendTagsVC = [[HKYRecommendTagsViewController alloc] init];
+    [self.navigationController pushViewController:recommendTagsVC animated:YES];
 }
 
 
