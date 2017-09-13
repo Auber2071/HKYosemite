@@ -27,16 +27,13 @@
     attributeDic[NSForegroundColorAttributeName] = [UIColor grayColor];
     attributeDic[NSFontAttributeName] = [UIFont systemFontOfSize:12.f];
     
-    
     NSMutableDictionary *selectedAttributeDic = [NSMutableDictionary dictionary];
     attributeDic[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     attributeDic[NSFontAttributeName] =  attributeDic[NSFontAttributeName];
     
-    
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attributeDic forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttributeDic forState:UIControlStateSelected];
-    
 }
 
 
@@ -49,7 +46,6 @@
     [self p_setupChildVC:[[HKYMeViewController alloc] init] title:@"我" defaultImgName:@"tabBar_me_icon" selectedImgName:@"tabBar_me_click_icon"];
     
     [self setValue:[[HKYTabBar alloc] init] forKeyPath:@"tabBar"];
-
 }
 
 -(void)p_setupChildVC:(UIViewController *)childVC title:(NSString *)title defaultImgName:(NSString *)defaultImgName selectedImgName:(NSString *)selectedImgName{
@@ -60,7 +56,6 @@
     
     HKYNavigationController *navi = [[HKYNavigationController alloc] initWithRootViewController:childVC];
     [self addChildViewController:navi];
-    
 }
 
 @end
