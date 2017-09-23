@@ -90,8 +90,6 @@
             self.indicatorView.centerX = button.centerX;
         }
     }
-    
-    
 }
 
 -(void)p_titleClick:(UIButton *)sender{
